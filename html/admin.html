@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vista de Administrador - Restaurante Don Antonio</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="mapa.html">Mapa Interactivo</a></li>
+                <li><a href="reserva.html">Reservar Mesa</a></li>
+                <li><a href="opiniones.html">Opiniones</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="admin.html">Vista de Administrador</a></li>
+            </ul>
+        </nav>
+        <h1>Vista de Administrador</h1>
+    </header>
+    <main>
+        <section id="admin-reservations">
+            <h2>Reservaciones de Clientes</h2>
+            <table id="reservations-table">
+                <thead>
+                    <tr>
+                        <th>ID Reservación</th>
+                        <th>ID Usuario</th>
+                        <th>Nombre Usuario</th>
+                        <th>Email</th>
+                        <th>Teléfono</th>
+                        <th>Fecha Reservación</th>
+                        <th>Hora Reservación</th>
+                        <th>Número de Personas</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Las reservaciones serán añadidas aquí dinámicamente -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="../js/admin.js"></script>
+</body>
+</html>

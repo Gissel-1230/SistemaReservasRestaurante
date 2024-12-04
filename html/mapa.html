@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Interactivo - Restaurante Don Antonio</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="reserva.html">Reservar Mesa</a></li>
+                <li><a href="login.html">Iniciar Sesión</a></li>
+                <li><a href="opiniones.html">Opiniones</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li id="welcome-message" style="display: none;"></li>
+            </ul>
+        </nav>
+        <h1>Mapa Interactivo</h1>
+    </header>
+    <main>
+        <section id="restaurant-map">
+            <h2>Mapa del Restaurante</h2>
+            <div id="map-container" style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px;">
+                <!-- Mesas serán añadidas aquí dinámicamente -->
+            </div>
+            <br>
+            <button id="save-reservation" style="display: none;">Guardar Reservación de Mesas</button>
+            <p><strong>Nota:</strong> Si necesitas reservar más de dos mesas, por favor comunícate al <a href="tel:7471001122">7471001122</a> para mayor información o podemos atenderte en la sucursal directamente.</p>
+        </section>
+        <section id="horarios">
+            <h2>Horarios Disponibles</h2>
+            <div id="schedule-container" style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px;">
+                <!-- Horarios serán añadidos aquí dinámicamente -->
+            </div>
+        </section>
+    </main>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>

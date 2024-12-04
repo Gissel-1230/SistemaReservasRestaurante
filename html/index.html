@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Don Antonio - Pozolería</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <!-- The callback parameter is required, so we use console.debug as a noop -->
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2e8vbsZOlmldb0KjVql0DtFEoZmyNY8w&callback=console.debug&libraries=maps,marker&v=beta"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="reserva.html">Reservar Mesa</a></li>
+                <li><a href="mapa.html">Mapa Interactivo</a></li>
+                <li><a href="login.html">Iniciar Sesión</a></li> <!-- Nueva opción -->
+                <li><a href="opiniones.html">Opiniones</a></li>
+                <li><a href="menu.html">Menú</a></li> <!-- Nueva opción -->
+            </ul>
+        </nav>
+        <h1>Restaurante Don Antonio</h1>
+    </header>
+    <main>
+        <section id="home">
+            <div class="titulo2">
+                <h2>Bienvenidos a Restaurante Don Antonio</h2>
+            </div>
+            <p>Disfruta de la mejor gastronomía en un ambiente acogedor. Nuestro restaurante ofrece una variedad de platillos deliciosos preparados con ingredientes frescos y de la más alta calidad.</p>
+            
+            <h3>El Pozole: Un Platillo Tradicional Mexicano</h3>
+            <div class="content-container">
+                <p>El pozole es una sopa o caldo tradicional de México, hecho a base de maíz cacahuazintle, carne (generalmente de cerdo o pollo), y condimentado con varios ingredientes como lechuga, rábano, orégano, cebolla, limón y chile. Se considera un platillo festivo y es común disfrutarlo durante celebraciones y festividades.</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnuwl9MeGCOBc7SOnWInMaDUPusCbHEsGhdQ&s" alt="Un delicioso plato de pozole" class="center-img">
+                <p><strong>Dato Curioso:</strong> El nombre "pozole" proviene del náhuatl "pozolli", que significa espuma. Esto se debe a que al cocinar el maíz cacahuazintle, los granos se abren y sueltan una especie de espuma.</p>
+            </div>
+
+            <h3>Nuestra Historia</h3>
+            <div class="content-container">
+                <p>En Restaurante Don Antonio, llevamos más de 20 años ofreciendo la mejor comida mexicana. Nuestro compromiso es con la calidad y el sabor auténtico. Desde nuestros humildes comienzos hasta convertirnos en un referente culinario, hemos mantenido nuestros valores y tradición.</p>
+                <img src="https://amexi.com.mx/wp-content/uploads/2024/09/poz1.jpg" alt="Restaurante Don Antonio" class="center-img">
+                <p>Nos enorgullecemos de ser un lugar donde las familias y amigos pueden reunirse para disfrutar de momentos inolvidables y sabores excepcionales.</p>
+            </div>
+            
+            <h3>Opiniones de Nuestros Clientes</h3>
+            <div class="testimonial-container">
+                <blockquote>"El mejor pozole que he probado, ¡un verdadero festín para el paladar!" - María G.</blockquote>
+                <blockquote>"Ambiente acogedor y comida deliciosa, ¡definitivamente volveré!" - Juan P.</blockquote>
+                <blockquote>"Un lugar encantador con un servicio excepcional y platillos que te hacen sentir como en casa." - Ana R.</blockquote>
+                <blockquote>"Recomendado al 100%. La atención y la calidad de la comida son insuperables." - Pedro L.</blockquote>
+            </div>
+
+            <h3>Galería de Imágenes</h3>
+            <div class="gallery-container">
+                <img src="https://peopleenespanol.com/thmb/vxx6_l3dlR75mS6OvBwFSTapwtg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/pozole-blanco-de-puerco-2000-cc5fd5d86ae4408abecc2bb1d57422e0.jpg" alt="Pozole 1" class="gallery-img">
+                <img src="https://acapulco.pro/wp-content/uploads/2022/02/pozole-guerrero-.jpg" alt="Pozole 2" class="gallery-img">
+                <img src="https://elsouvenir.com/wp-content/uploads/2020/11/Como-es-el-pozolo-de-Guerrero-1.jpg" alt="Pozole 3" class="gallery-img">
+                <img src="https://demo.clevercloudapp.com/repo/public/pozole_verde_estilo_guerrero_en_cdmx_pozoleria_el_pozole_de_moctezuma_blog_680713ab91bf21733d9473bd06694db5.webp" alt="Pozole 4" class="gallery-img">
+            </div>
+        </section>
+        <section id="mapa">
+            <h3>Nuestra Ubicación</h3>
+            <p>Encuéntranos en Chilpancingo de los Bravo, Guerrero, México. Consulta el mapa para obtener direcciones detalladas.</p>
+            <gmp-map center="17.550119400024414,-99.5077133178711" zoom="14" map-id="DEMO_MAP_ID" style="height: 400px; width: 100%;">
+                <gmp-advanced-marker position="17.550119400024414,-99.5077133178711" title="Restaurante Don Antonio"></gmp-advanced-marker>
+            </gmp-map>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Restaurante Don Antonio. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

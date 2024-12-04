@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservar Mesa - Restaurante Don Antonio</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="mapa.html">Mapa Interactivo</a></li>
+                <li><a href="login.html">Iniciar Sesión</a></li>
+                <li><a href="opiniones.html">Opiniones</a></li>
+                <li><a href="menu.html">Menú</a></li>
+            </ul>
+        </nav>
+        <h1>Reservar Mesa</h1>
+    </header>
+    <main>
+        <section id="reservation-form">
+            <h2>Reserva tu mesa</h2>
+            <form id="form">
+                <label for="date">Fecha:</label>
+                <input type="date" id="date" name="fecha_reservacion" required>
+                
+                <label for="estado">Estado:</label>
+                <input type="text" id="estado" name="estado" value="Activo" readonly>
+                
+                <button type="submit">Reservar</button>
+                <a href="mapa.html"><button type="button" id="go-to-map">Ir al Mapa Interactivo</button></a>
+            </form>
+        </section>
+    </main>
+    <script src="../js/app.js"></script>
+</body>
+</html>
